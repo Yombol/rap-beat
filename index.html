@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Jersey Club Beats | Yombol Music – Exclusive Beats</title>
-    <meta name="description" content="Buy exclusive Jersey Club beats. Prices from $5, instant delivery. Take your music to the next level!">
-    <meta name="keywords" content="Jersey Club, beats exclusive, Yombol Music, Beatstars, Beats for sale, type beat, instrumental, beats">
+    <title>Classic Rap & Boom Bap Beats | Yombol Music – Raw Street & Vinyl Edition</title>
+    <meta name="description" content="Buy premium Classic Rap, Boom Bap & Underground Hip-Hop beats. Raw drums, vintage vinyl warmth, WAV + Individual Track Stems for true lyricists.">
+    <meta name="keywords" content="Buy Boom Bap Beats, Rap Beats, Underground Hip Hop, Classic Rap Type Beat, Old School Beats, Yombol Music, Vinyl Beats">
     <meta name="author" content="Yombol Music">
-    <link rel="canonical" href="https://JerseyClub.YombolMusic.com">
-
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="canonical" href="https://rap.yombolmusic.com">
     <link rel="icon" href="images/favicon.png" type="image/png">
 
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -24,200 +26,344 @@
     fbq('init', '1408373406987633');
     fbq('track', 'PageView');
     </script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1408373406987633&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Fonts: Sedgwick Ave (Graffiti), Permanent Marker (Tag) & Poppins (Text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;600;800;900&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <style>
         :root {
-            --bg-dark: #05050a;
-            --neon-blue: #00f2ff;
-            --neon-purple: #bc13fe;
-            --text-light: #ffffff;
-            --glass: rgba(255, 255, 255, 0.05);
-            --wave-speed: 10s;
+            /* Paleta Monocromática Street Rap */
+            --pure-black: #050505;
+            --pure-white: #ffffff;
+            --gray-light: #d0d0d0;
+            --gray-mid: #222222;
+            --gray-dark: #121212;
+            --street-border: #444444;
+            --table-bg: rgba(15, 15, 15, 0.95); 
+            --table-hover: rgba(30, 30, 30, 0.98);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-light);
+            background-color: var(--pure-black);
+            color: var(--pure-white);
             overflow-x: hidden;
             line-height: 1.6;
         }
 
+        /* --- BACKGROUND CON LUCES DE SOMBRA --- */
         .bg-wrapper {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
             z-index: -1;
-            background: radial-gradient(circle at 50% 50%, #1a0b2e 0%, #05050a 100%);
+            background: radial-gradient(circle at 50% 50%, #111111 0%, var(--pure-black) 100%);
             overflow: hidden;
         }
 
-        .wave {
+        .ambient-light {
             position: absolute;
-            top: 50%; left: -50%; width: 200%; height: 200px;
-            background: linear-gradient(90deg, transparent, var(--neon-blue), var(--neon-purple), transparent);
-            filter: blur(80px);
-            opacity: 0.3;
-            animation: flow var(--wave-speed) infinite linear;
-            transform: translateY(-50%) rotate(-5deg);
+            border-radius: 50%;
+            filter: blur(140px);
+            opacity: 0.15;
+            animation: pulseLight 16s infinite alternate ease-in-out;
+        }
+        .light-1 { width: 500px; height: 500px; background: #ffffff; top: -10%; left: -5%; }
+        .light-2 { width: 550px; height: 550px; background: #888888; bottom: -15%; right: -10%; animation-delay: -6s; }
+        .light-3 { width: 400px; height: 400px; background: #444444; top: 45%; left: 38%; animation-delay: -12s; }
+
+        @keyframes pulseLight {
+            0% { transform: scale(1) translate(0, 0); opacity: 0.10; }
+            100% { transform: scale(1.3) translate(30px, -30px); opacity: 0.22; }
         }
 
-        @keyframes flow {
-            0% { transform: translateY(-50%) translateX(0%) rotate(-2deg); }
-            50% { transform: translateY(-40%) translateX(-20%) rotate(2deg); }
-            100% { transform: translateY(-50%) translateX(0%) rotate(-2deg); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; position: relative; z-index: 1; }
+        
+        section { padding: 40px 0; }
+
+        /* --- BANNER ESTILO VINILO / MARCO BLANCO Y NEGRO --- */
+        .banner-wrapper {
+            width: 100%;
+            margin: 20px auto; 
+            border-radius: 6px;
+            padding: 3px;
+            background: linear-gradient(135deg, #ffffff, #666666, #111111);
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
-
-        /* Eliminamos paddings que afecten el margen exacto de 20px */
-        section { padding: 0; }
-
-        /* --- BANNER CON 20PX DE ESPACIO EXACTO --- */
         .banner {
-            width: 100%;
-            margin: 20px auto 20px auto; 
-            border-radius: 15px;
+            border-radius: 4px;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
-            background: #111;
             line-height: 0;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+            background: #000;
         }
 
-        .banner img { width: 100%; height: auto; display: block; object-fit: contain; }
+        .banner img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            object-fit: cover; 
+            object-position: center;
+            filter: grayscale(30%);
+            transition: filter 0.5s;
+        }
 
-        /* --- REPRODUCTOR AJUSTADO (CALZADO AFROBEAT) --- */
-        .player-container {
+        .banner img:hover {
+            filter: grayscale(0%);
+        }
+
+        /* --- REPRODUCTOR BEATSTARS MONOCROMÁTICO --- */
+        .player-wrapper {
             width: 100%;
-            background: var(--glass);
-            border-radius: 15px;
-            border: 1px solid rgba(0, 242, 255, 0.2);
+            margin-bottom: 40px; 
+            border-radius: 6px;
+            padding: 3px;
+            background: linear-gradient(135deg, #888888, #ffffff, #222222);
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.15);
+        }
+
+        .player-container {
+            background: #000;
+            border-radius: 4px;
             overflow: hidden;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.8);
-            line-height: 0; 
-            margin-bottom: 40px;
+            line-height: 0;
         }
 
-        .player-container iframe { display: block; width: 100%; height: 800px; border: none; }
+        .player-container iframe { display: block; border: none; width: 100%; height: 800px; }
 
+        /* TÍTULOS GRAFFITI */
         .section-title {
-            text-align: center; margin-bottom: 40px; margin-top: 20px; font-size: clamp(1.8rem, 5vw, 2.5rem);
-            font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #fff;
-            text-shadow: 0 0 10px var(--neon-blue);
+            text-align: center; 
+            margin-bottom: 40px; 
+            font-family: 'Sedgwick Ave', cursive;
+            font-size: 3.5rem; 
+            font-weight: 400;
+            letter-spacing: 2px; 
+            color: #ffffff;
+            text-shadow: 3px 3px 0px #000, 0 0 15px rgba(255, 255, 255, 0.6); 
+            transform: rotate(-1deg);
         }
 
-        .pricing-table { display: flex; flex-direction: column; gap: 20px; }
+        /* --- LICENSING (ESTILO STREET RAW CRATE) --- */
+        .pricing-table { display: flex; flex-direction: column; gap: 15px; }
 
         .price-row {
-            background: rgba(10, 10, 20, 0.7);
-            border: 1px solid rgba(0, 242, 255, 0.3);
-            border-radius: 12px; padding: 25px 40px; display: grid; grid-template-columns: 2fr 3fr 1fr;
-            align-items: center; transition: all 0.3s ease; position: relative; overflow: hidden;
+            background: var(--table-bg); 
+            padding: 30px 40px; 
+            display: grid; 
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center; 
+            transition: 0.3s ease-in-out; 
+            border-radius: 4px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.9);
+            border: 1px solid var(--street-border);
         }
 
-        .price-row:hover { background: rgba(255, 255, 255, 0.08); transform: scale(1.02) translateX(5px); border-color: var(--neon-blue); }
+        .price-row::before {
+            content: "";
+            position: absolute;
+            left: 0; top: 0; width: 6px; height: 100%;
+            transition: 0.3s;
+        }
 
-        .license-name { font-size: 1.4rem; font-weight: 600; z-index: 1; }
-        .license-name span { display: block; font-size: 1.8rem; color: var(--neon-blue); text-shadow: 0 0 10px rgba(0, 242, 255, 0.5); }
+        .price-row:nth-child(1)::before { background: #666666; }
+        .price-row:nth-child(2)::before { background: #aaaaaa; }
+        .price-row:nth-child(3)::before { background: #dddddd; }
+        .price-row:nth-child(4)::before { background: #ffffff; }
 
-        .license-details { font-size: 0.95rem; color: #ccc; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 30px; z-index: 1; }
-        .license-details strong { color: #fff; display: block; margin-bottom: 5px; }
+        .price-row:hover {
+            transform: translateX(10px);
+            background: var(--table-hover);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            border-color: #ffffff;
+        }
 
-        .price-tag { font-size: 2.2rem; font-weight: 800; text-align: right; color: var(--neon-purple); text-shadow: 0 0 15px rgba(188, 19, 254, 0.6); z-index: 1; }
+        .price-row:hover::before { width: 10px; background: #ffffff; }
 
-        .instant-delivery { text-align: center; margin-top: 20px; font-size: 0.9rem; opacity: 0.6; letter-spacing: 1px; }
+        .license-name { 
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.8rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            color: #ffffff;
+        }
 
-        .contact-section { text-align: center; padding: 60px 0; }
-        .social-icons { display: flex; justify-content: center; gap: 40px; margin-bottom: 35px; }
-        .social-icons a { color: #fff; font-size: 2.5rem; transition: all 0.3s ease; }
-        .social-icons a:hover { color: var(--neon-blue); transform: translateY(-5px) scale(1.1); filter: drop-shadow(0 0 10px var(--neon-blue)); }
+        .license-name span { 
+            font-family: 'Poppins', sans-serif;
+            color: var(--gray-light); 
+            font-size: 0.85rem; 
+            display: block; 
+            font-weight: 600; 
+            margin-top: 5px; 
+            opacity: 0.85; 
+        }
+
+        .license-details { color: #d0d0d0; font-size: 0.95rem; padding: 0 30px; border-left: 1px solid var(--street-border); }
+        .license-details strong { color: #fff; display: block; margin-bottom: 5px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        .price-tag { font-size: 2.6rem; font-weight: 900; text-align: right; color: #fff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); }
+        .price-tag.offer { font-size: 1.8rem; line-height: 1.2; color: #ffffff; }
+
+        .instant-delivery {
+            text-align: center; margin-top: 30px; color: #ffffff;
+            font-family: 'Permanent Marker', cursive;
+            letter-spacing: 3px; font-size: 1.1rem; text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        /* --- CONTACT SECTION --- */
+        .contact-section { text-align: center; padding: 50px 0; }
+
+        .social-icons { display: flex; justify-content: center; align-items: center; gap: 50px; margin-bottom: 40px; }
+        
+        .social-icons a { 
+            color: #ffffff; 
+            font-size: 2.8rem; 
+            transition: 0.3s; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            text-decoration: none !important;
+        }
+        .social-icons a:hover { color: #ffffff; transform: scale(1.2); filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9)); }
+        
+        .beatstars-b { 
+            font-family: 'Arial Black', Impact, sans-serif; 
+            font-style: normal; 
+            font-size: 3rem; 
+            line-height: 1; 
+        }
 
         .whatsapp-btn {
-            display: inline-block; padding: 18px 35px; background: transparent;
-            border: 2px solid var(--neon-blue); color: #fff; text-decoration: none;
-            border-radius: 50px; font-weight: 600; text-transform: uppercase;
-            letter-spacing: 1px; transition: all 0.3s;
-            box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+            display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+            padding: 20px 50px;
+            background: linear-gradient(90deg, #111111, #ffffff);
+            color: #000; text-decoration: none !important;
+            font-weight: 900; font-size: 1.1rem; text-transform: uppercase; 
+            border-radius: 4px; 
+            transition: 0.3s;
+            letter-spacing: 1px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+            border: 1px solid #ffffff;
         }
 
-        .whatsapp-btn:hover { background: var(--neon-blue); color: #000; box-shadow: 0 0 30px rgba(0, 242, 255, 0.6); }
+        .whatsapp-btn i { font-size: 1.8rem; color: #000; }
+        .whatsapp-btn:hover { 
+            transform: scale(1.05); 
+            background: #ffffff;
+            box-shadow: 0 0 45px rgba(255, 255, 255, 0.6); 
+            color: #000;
+        }
 
-        footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; color: #666; }
-        footer p a { color: inherit; text-decoration: none; font-weight: 600; }
-        footer p a:hover { color: var(--neon-purple); }
-        .footer-links { margin-top: 10px; }
-        .footer-links a { color: #888; text-decoration: none; margin: 0 10px; }
-        .footer-links a:hover { color: var(--neon-purple); }
+        /* --- FOOTER --- */
+        footer { 
+            text-align: center; 
+            padding: 60px 0; 
+            border-top: 1px solid var(--street-border); 
+            font-size: 0.8rem; 
+            color: #888888; 
+            margin-top: 20px; 
+        }
+        footer p { margin-bottom: 15px; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .footer-links a { color: #aaaaaa; text-decoration: none; transition: 0.3s; font-weight: 600; }
+        .footer-links a:hover { color: #ffffff; text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
 
+        /* RESPONSIVE DESIGN */
         @media (max-width: 900px) {
             .price-row { grid-template-columns: 1fr; text-align: center; gap: 15px; padding: 30px; }
-            .license-details { border-left: none; padding-left: 0; }
-            .price-tag { text-align: center; font-size: 1.8rem; }
+            .price-row::before { width: 100%; height: 5px; left: 0; top: 0; }
+            .price-row:hover::before { width: 100%; height: 7px; }
+            .price-tag { text-align: center; }
+            .license-details { border-left: none; padding: 10px 0; border-top: 1px solid var(--street-border); margin-top: 10px; }
+            .section-title { font-size: 2.6rem; }
+            .whatsapp-btn { padding: 18px 30px; font-size: 1rem; width: 100%; max-width: 350px; }
         }
     </style>
 </head>
 <body>
 
-    <div class="bg-wrapper"><div class="wave"></div></div>
+    <!-- Fondo dinámico monocromático con sombras ambiente -->
+    <div class="bg-wrapper">
+        <div class="ambient-light light-1"></div>
+        <div class="ambient-light light-2"></div>
+        <div class="ambient-light light-3"></div>
+    </div>
 
     <div class="container">
         
-        <header class="banner">
-            <img src="images/Banner-(Jersey-Club).jpg" alt="Jersey Club Banner">
-        </header>
+        <!-- Top Banner with Monochromatic Wrapper -->
+        <div class="banner-wrapper">
+            <header class="banner">
+                <img src="images/Banner-(Rap).jpg" alt="Yombol Music Classic Rap & Boom Bap Beats Banner">
+            </header>
+        </div>
 
-        <section>
+        <!-- Beatstars Player -->
+        <div class="player-wrapper">
             <div class="player-container">
-                <iframe title="Yombol Music BeatStars Store" src="https://player.beatstars.com/?storeId=142229" width="100%" height="800" frameborder="0"></iframe>
+                <iframe src="https://player.beatstars.com/?storeId=148186" scrolling="no"></iframe>
             </div>
-        </section>
+        </div>
 
+        <!-- Licensing Section -->
         <section id="licensing">
             <h2 class="section-title">Licensing Options</h2>
+            
             <div class="pricing-table">
+                <!-- Standard -->
                 <div class="price-row">
-                    <div class="license-name">Basic <span>MP3</span></div>
-                    <div class="license-details"><strong>MP3 File</strong>Monetization Available • Perfect for small projects</div>
-                    <div class="price-tag">$5</div>
+                    <div class="license-name">Standard<span>High-Quality MP3 + WAV</span></div>
+                    <div class="license-details"><strong>Independent MCs</strong>Commercial Monetization • 100% Royalty-Free • Perfect for Streaming & Social Media</div>
+                    <div class="price-tag">$34.90</div>
                 </div>
+                <!-- Premium -->
                 <div class="price-row">
-                    <div class="license-name">Premium <span>WAV</span></div>
-                    <div class="license-details"><strong>WAV File (High Quality)</strong>Best for streaming platforms • Ideal for official releases</div>
-                    <div class="price-tag">$10</div>
+                    <div class="license-name">Premium<span>MP3 + WAV + Track Stems</span></div>
+                    <div class="license-details"><strong>Studio Quality</strong>Individual Tracklines (Stems) • Ideal for Official Releases • Optimized for Pro Mixing</div>
+                    <div class="price-tag">$59.90</div>
                 </div>
+                <!-- Unlimited -->
                 <div class="price-row">
-                    <div class="license-name">Stems <span>Trackout</span></div>
-                    <div class="license-details"><strong>WAV + Track Stems</strong>Full control for mixing & mastering • Professional studio use</div>
-                    <div class="price-tag">$20</div>
+                    <div class="license-name">Unlimited<span>MP3 + WAV + Track Stems</span></div>
+                    <div class="license-details"><strong>Full Control</strong>Unlimited Streams & Sales • Profit-Share Included • Best Value for Major Distribution</div>
+                    <div class="price-tag">$149.90</div>
                 </div>
+                <!-- Exclusive -->
                 <div class="price-row">
-                    <div class="license-name">Exclusive <span>Unlimited</span></div>
-                    <div class="license-details"><strong>MP3 + WAV + Stems</strong>Full Rights Included • Beat sold only once</div>
-                    <div class="price-tag">$40</div>
+                    <div class="license-name">Exclusive<span>All Formats + Contract</span></div>
+                    <div class="license-details"><strong>Total Ownership</strong>100% Full Rights • Beat Removed from Store • PDF Contract Included</div>
+                    <div class="price-tag offer">Make<br>an Offer</div>
                 </div>
             </div>
-            <p class="instant-delivery">Instant delivery after purchase</p>
+
+            <p class="instant-delivery">Raw Drums. Vintage Vinyl Warmth. Instant delivery.</p>
         </section>
 
+        <!-- Contact Section -->
         <section class="contact-section">
-            <h2 class="section-title">Follow & Contact</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="social-icons">
-                <a href="https://instagram.com/YombolMusic" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://youtube.com/@YombolMusic" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.beatstars.com/yombolmusic/tracks" target="_blank"><i class="fas fa-music"></i></a>
+                <a href="https://instagram.com/YombolMusic" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@YombolMusic" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.beatstars.com/yombolmusic/tracks" target="_blank" aria-label="Beatstars"><span class="beatstars-b">B</span></a>
             </div>
-            <a href="https://wa.me/573194018839" class="whatsapp-btn" target="_blank" onclick="fbq('track', 'Contact');">
-                <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp – Instant reply
+            
+            <a href="https://wa.me/573194018839?text=Hello,%20I'd%20like%20more%20information%20about%20Yombol%20Music%20Classic%20Rap%20%26%20Boom%20Bap%20beats..." class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp – Let's Work
             </a>
         </section>
 
+        <!-- Footer -->
         <footer>
-            <p>© 2026 <a href="https://yombolmusic.com/en/index.html">Yombol Music</a>. All Rights Reserved.</p>
+            <p>© 2026 Yombol Music. All Rights Reserved.</p>
             <div class="footer-links">
                 <a href="https://yombolmusic.com/en/privacy-policy.html">Privacy Policy</a> • 
                 <a href="https://yombolmusic.com/en/cookies.html">Cookies Policy</a> • 
@@ -225,5 +371,6 @@
             </div>
         </footer>
     </div>
+
 </body>
 </html>
